@@ -1,0 +1,5 @@
+Dim var 
+Do until var=6
+var=msgbox("are you an idiot ?",4+16,"PC Hacked")
+Loop 
+a=msgbox("HAHAHAHA I KNEW IT !",0+64,"PC HACKED")
