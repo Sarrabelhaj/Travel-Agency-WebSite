@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Book Now </title>
+	<link rel="stylesheet" type="text/css" href="../css/book.css">
+  
+</head>
+<body>
+<section class="container">
+<form action="../php/book.php" method="post"name="f" class="form">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="T1" placeholder="Full Name" required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="T2" placeholder="Email Address" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="T3" placeholder="Phone Number" required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult">How Many </label>
+      <input type="number" id="adult" name="T4" placeholder="Number of guests" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">Children</label>
+      <input type="number" id="child" name="T5" placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date">Check-in Date</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Check-out Date</label>
+      <input type="date" id="checkout-date" name="checkout" required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+    
+      <select name="D1" selected>
+        <option value="Where ? ">Where ?</option>
+        <option value="Bali">Bali </option>
+        <option value="Dubai">Dubai </option>
+        <option value="Egypt">Egypt </option>
+        <option value="France">France </option>
+        <option value="New York">New York </option>
+      </select>
+    </div>
+  </br>
+    
+    <div class="elem-group">
+      <label for="message"></br></br>Anything Else?</label>
+      <textarea id="message" name="message" placeholder="Tell us anything else that might be important." required></textarea>
+    </div>
+    <button type="submit">Book Now</button>
+  </form>
+  </section>
+</body>
+  </html>

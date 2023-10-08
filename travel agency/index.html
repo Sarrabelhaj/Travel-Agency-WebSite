@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head> 
+      <meta charset="UTF-8">
+      <meta name="viewport"  , initial-scale="1.0">
+      <title> Agence de voyage </title>
+      <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+      
+</head>
+
+<body>      
+    <!-- header section starts-->
+      <header>
+     
+            <div id="menu-bar" class="fas fa-bars"></div>  
+            <a href = "index.html" class="logo"><span>Odyssey </span>Travel</a>
+            <!-- navbar section starts-->
+            <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a> 
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            </nav>
+            <!-- navbar section ends-->
+            <div class ="icons">
+                 <i class = "fas fa-search" id ="search-btn"></i>
+                 <i class = "fas fa-user" id ="login-btn"></i>
+            </div>
+            <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="Search Here .. ">
+      <label for ="search-bar" class="fas fa-search"></label>
+            </form>
+      </header>
+<!-- header section ends-->
+<div class = "login-form-container">
+      <i class="fas fa-time" id ="form-close"></i>
+      <form action="">
+            <h3>login</h3>
+            <input type="email" class ="box" placeholder="enter your email">
+            <input type="password" class ="box" placeholder="enter your password">
+            <input type="submit"   value="login now" class="btn">
+            <input type="checkbox" id="remeber">
+            <label for ="remeber">remeber me </label>
+            <p>forget password ?<a href="pages/forget.html" >click here</a></p>
+            <p>forget have an account ?<a href="pages/registre.html">register now</a></p>
+      </from>
+</div>
+
+<!-- home section starts-->
+<section class="home" id="home"> 
+      <div class="content">
+      <h3> adventure is worthwhile </h3>
+      <p>discover new places with us, adventure awaits</p>
+      <a href="pages/discover.html" class="btn"> discover us</a>  
+      </div>
+      <div class="controls">
+          <span class="vid-btn active"data-src="video\video1.mp4"></span>
+          <span class="vid-btn"data-src="video\video2.mp4"></span>
+          <span class="vid-btn"data-src="video\video3.mp4"></span>
+          <span class="vid-btn"data-src="video\video4.mp4"></span>
+          
+          <span class="vid-btn"data-src="video\video6.mp4"></span>
+      </div>
+  <div class="video-container">
+     <video src="video\video1.mp4" id="video-slider"loop autoplay muted></video>
+  </div>
+  </section>
+  <!-- home section ends-->
+  <!-- book section starts-->
+  <section class="book" id="book">
+      <h1 class="heading">
+          <span>b</span>
+          <span>o</span>
+          <span>o</span>
+          <span>k</span>
+          <span class="space"></span>
+          <span>n</span>
+          <span>o</span>
+          <span>w</span>
+      </h1>
+      <div class="row">
+          <div class="img">
+             <img src="img\book.jpg" alt="" >
+          </div>
+          <form method="POST" name="f" action="pages/booknow.html">
+              <div class="inputBox">
+                  <h3>where to</h3>
+                  <input type="text" placeholder="place name">
+              </div>
+              <div class="inputBox">
+                  <h3>how many</h3>
+                  <input type="number" placeholder="number of guests">
+              </div>
+              <div class="inputBox">
+                  <h3>arrivals</h3>
+                  <input type="date">
+              </div>
+              <div class="inputBox">
+                  <h3>leaving</h3>
+                  <input type="date">
+              </div>
+            <a href="pages/booknow.html"><input type="button" class="btn" value="book now"></a>
+          </form>
+      </div>
+  </section>
+  <!-- book section ends-->
+  <!-- packages section starts -->
+<section class="packages" id="packages">
+     <h1 class= "heading">
+         <span>p</span>
+         <span>a</span>
+         <span>c</span>
+         <span>k</span>
+         <span>a</span>
+         <span>g</span>
+         <span>e</span>
+         <span>s</span>
+     </h1>
+
+
+     <div class= "box-container">
+        <div class= "box">
+            <img Src="img\egypte.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> EGYPTE </h3>
+                <p>Pyramids of Giza,Cruising the Nile,Abu Simbel,Diving the Red Sea,Explore Islamic Cairo,Egyptian Museum,Siwa Oasis</p>
+             
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 2550TND <span>3000TND</span> </div>
+                <a href="pages/booknow.html" class="btn">book now</a>
+            </div>
+        </div>
+        <div class= "box-container">
+            <div class= "box">
+                <img Src="img\dubai.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> DUBAI </h3>
+                    <p>Burj Khalifa,Dubai Fountain,Dubai Mall,Dubai Aquarium,Dubai Miracle Garden,Global Village,Skydive</p>
+                 
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 3500TND <span>4000TND</span> </div>
+                    <a href="pages/booknow.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class= "box-container">
+                <div class= "box">
+                    <img Src="img\newyork.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> NEW YORK </h3>
+                        <p>Statue of Liberty,Central Park,Rockefeller Center & Top of the Rock Observation Deck,Metropolitan Museum of Art,Empire State Building,9/11 Memorial and Museum,Times Square,Brooklyn Bridge</p>
+                      
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> 5000TND <span>6000TND</span> </div>
+                        <a href="pages/booknow.html" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class= "box-container">
+                    <div class= "box">
+                        <img Src="img\bali.jpg" alt="">
+                        <div class="content">
+                            <h3> <i class="fas fa-map-marker-alt"></i> BALI</h3>
+                            <p> small beautiful island and a part of Indonesia's archipelago, and the most famous of Indonesian tourism in the world. 
+                            It owns the panorama and unique culture that makes this island exclusive to others.</p>
+                      
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> 4400TND <span>5000TND</span> </div>
+                            <a href="pages/booknow.html" class="btn">book now</a>
+                        </div>
+                    </div>
+                    <div class= "box-container">
+                        <div class= "box">
+                            <img Src="img\paris.jpg" alt="">
+                            <div class="content">
+                                <h3> <i class="fas fa-map-marker-alt"></i> PARIS </h3>
+                                <p> the city of Lights, the fashion capital, the city of Love.</p>
+                             
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price"> 4500TND <span>5000TND</span> </div>
+                                <a href="pages/booknow.html" class="btn">book now</a>
+                            </div>
+                        </div>
+                     
+                            </div>
+    </section>
+<!-- packages section ends -->
+<!-- services section starts -->
+<section class="services" id="services">
+    <h1 class= "heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+        <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3><a href="pages/hotel.html">affordable hotels</a></h3>
+        
+            <p></p>
+        </div>
+       
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+           <a href="pages/restaurant.html"> <h3>food and drinks</h3></a>
+            <p></p>
+        </div>
+
+      
+        <div class="box">
+        <i class="fas fa-globe asia"></i>
+            <a href="index.html"><h3>around the world</h3></a>
+            <p></p>
+        </div>
+    
+        <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3><a href ="pages/adventures.html">adventures</a></h3>
+            <p></p>
+        </div>
+ </section>       
+ <!-- services section ends --> 
+ <!-- review section starts -->
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>H</span>
+        <span>a</span>
+        <span>p</span>
+        <span>p</span>
+        <span>y</span>
+        <span class="space"></span>
+        <span>T</span>
+        <span>r</span>
+        <span>v</span>
+        <span>e</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>s</span>
+
+    </h1>
+    <div class=" swiper-container review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\menton-france-4-1.jpg" alt="">
+                    <h3> Sourour Mekni </h3>
+                    <p> "Odyssey travel helped me plan a family trip to the South of France this summer and the itinerary was amazing! I expressed to them my concerns of traveling with a toddler and they worked around all of them. I also love the technology they use. The itinerary is formatted for your smartphone and you are also provided a PDF in case you’re old school like me and like to print things out. These details made the trip seamless and easy. They are incredible to work with. They want you to accomplish your traveling goals whether that be to relax or see everything a place has to offer. They really listens to you and has no agenda of their own. I will be using their service for every trip I take from here on out. Thank you Explorateur for the amazing trip!”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\s1.jpg" alt="">
+                    <h3> Nada Omri </h3>
+                    <p> "Makes traveling so easy! We just couldn’t imagine planning the honeymoon we wanted while also planning our wedding, so a friend recommended Explorateur and man I’m glad she did. They took my thoughts and ran with them and came back with two honeymoon options. We picked Australia and the flights, hotels and transportation were all done for us. We had an amazing honeymoon and didn’t have to think twice about any of the planning, just showed up with our passports and suitcases!”
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\avis.jpg" alt=""">
+                    <h3> Ahmed soli </h3>
+                    <p> “Our honeymoon was an absolute dream thanks to Explorateur! It was so relaxing and unlike many other trips that I’ve attempted to plan myself, I was never stressed out. Airport transport, dinner reservations, side trips and day tours- every single detail was so well tailored to what we needed and wanted during our time in Europe! They were so helpful, even while we were in Paris/Bruges, and genuinely wanted to make sure that we were always enjoying ourselves. This is no doubt the best way to travel!”
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\avis2.jpg" alt="">
+                    <h3> ALI BOUANI </h3>
+                    <p> “My wife and I had never been to Europe prior to our trip. However, over the years we’ve talked about things we would love to see and do during our first venture across the pond. I brought those ideas to Jennifer and she took them to the next level and beyond our expectations. We spent 2 weeks in Italy (Florence and Rome) and Greece (Santorini and Athens). From coordinating all of our transportation to choosing the absolute best excursions and restaurants in each city my wife and I were able to maximize our experience in each destination. Beyond just maximizing our time, they were able to maximize every dollar spent while working within our budget on this experience we will never forget. If you’re ever considering a special trip, look no further than Explorateur Travel, you wont be disappointed!”
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<!-- review section ends -->
+<!-- contact section starts-->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="img\contact.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="iputbox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email"> 
+            </div>
+            <div class="iputbox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject"> 
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+
+</section>
+<!-- contact section ends-->
+<!-- footer section starts-->
+<footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <img src="img/logo.png" alt="Example Company Logo">
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <p> Copyrights &copy Designed by <bold>NESS</bold</p>
+    </div>
+  </footer>
+<!-- footer section ends-->
+
+
+   <script src="js/script.js"></script>
+</body>
+</html>
